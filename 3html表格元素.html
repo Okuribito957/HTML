@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!-- html表格三大元素：<table> <tr> <td> -->
+<body>
+    <table border="1px" align="center">
+    <!--表格1-->
+        <tr>
+            <td>admin</td>
+            <td>张钧千</td>
+            <td>957</td>
+        </tr>
+        <tr>
+            <td>admin</td>
+            <td>黄昱霖</td>
+            <td>495</td>
+        </tr>
+    </table>
+<br><!--换行符-->
+    <!--表格2-->
+    <table border="1px">
+        <thead><!--表头-->
+            <tr><!--表头元素 将字体加粗居中-->
+                <th>用户名</td>
+                <th>性别</td>
+                <th>密码</td>
+            </tr>
+        </thead>
+        <tbody><!--表身-->
+            <tr>
+                <td>张钧千</td>
+                <td>男</td>
+                <td>957</td>
+            </tr>
+            <tr>
+                 <td>黄昱霖</td>
+                <td>女</td>
+                <td>495</td>
+            </tr>
+            <tr>
+                <td>admin</td>
+                <td>使用th元素单元格会被自动拓宽并居中显示</td>
+                <td>957495</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--表脚-->
+        </tfoot>
+    </table>
+<br><!--表格3-->
+    <table border="1px">
+        <tr>
+            <td rowspan="2">aaaa</td>
+            <td>bbbb</td>
+            <td>cccc</td>
+            <td>dddd</td>
+        </tr>
+        <tr>
+            <!--合并列单元格的空位-->
+            <td colspan="2">bbbb</td>
+            <!--合并行单元格的空位-->
+            <td>dddd</td>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td>bbbb</td>
+            <td>cccc</td>
+            <td>dddd</td>
+        </tr>
+    </table>
+</body>
+</html>

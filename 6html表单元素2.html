@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title>创建表单2</title>
+    </head>
+    <body>
+        <from>
+            <input type="button" value="按钮">
+            <br>
+            <button>按钮</button><!--和js合作且作为绑定事件-->
+            <br>
+            <input type="submit" value="按钮"><!--提交表单-->
+            <br>
+            <input tyoe="range" min="-100" max="100" step="100">
+            <!--range类型可以滑动 数字滑动-->
+            <br>
+            <input tyoe="range" min="-100" max="100" step="100" value="-100">
+            <!--min控制最小值 max控制最大值 step控制每次滑动的值 value控制初始值-->
+            <br>
+            <input type="number" min="-100" max="100" value="0">
+            <!--number类型输入数字-->
+            <br>
+            <input type="checkbox">选择<!--上传至服务器时为布尔值-->
+            <br><!--选择框-->
+            1+1=？
+            <input type="radio" name="a">        1<!--radio类型 多个选择框-->
+            <input type="radio" name="a">        2<!--name元素 限制多个选择-->
+            <input type="radio" name="a" checked>3<!--默认选择-->
+            <br>
+            1+1=？
+            <select><!--下拉菜单选择 不能修改-->
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <br>
+            <input type="text" list="datalist1"><!--datalist属性 可以修改的下拉菜单-->
+            <datalist id="datalist1"><!--id 引导datalist进入-->
+                <option>1</option>
+                <option>3</option>   
+                <option>4</option>
+            </datalist>
+        </from>
+    </body>
+</html>
