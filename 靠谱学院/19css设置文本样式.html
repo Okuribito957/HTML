@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置文本样式</title>
+    <style type="text/css">
+        .class1{
+            direction: rtl;
+        }
+        .class2{
+            letter-spacing: 10px;
+            word-spacing: 100px;
+            line-height: 100px;
+        }
+        .class3{
+            text-indent: 50px;
+        }
+        .class4{
+            text-decoration: overline;
+        }
+        .class5{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <p align="center">css设置文本样式</p> <!--对齐文本               align属性，html5核心规范-->
+    <p class="class1">css设置文本样式 hellow world</p>
+    <p class="class2"> hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world  </p>
+    <p class="class3"> hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world hellow world  </p>
+    <p class="class4">文本装饰</p>
+    <p class="class5">hellow world</p>
+</body>
+</html>
+<!--
+    class1：本方向，对中文支持很差
+    class2：字间距letter-spacing，词间距word-spacing，行间距line-height
+    class3：首行缩进
+    class4：上划线overline\下划线underline\删除线line-through
+    class5：大小写转换 全部大写uppercase\全部小写lowercase\首字母大写capitalize
+-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画实例</title>
+    <style type="text/css">
+        .div{
+            text-align: center;
+        }
+        .img{
+            margin-top: 0px;
+            width: 100px;
+            height: 100px;
+        }
+        html:hover .img{
+            animation-name: img;
+            animation-delay: 500ms;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes img{
+            to{
+                width: 300px;
+                height: 300px;
+                margin-top: 150px;
+            }
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-shadow: 2px 2px 3px  darkgrey;
+            opacity: 0;
+        }
+        html:hover p{
+            transition-delay: 500ms;
+            transition-duration: 1s;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-shadow: 2px 2px 3px  darkgrey;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <img src="../HTML5/img/1.gif" class="img">
+        <p>你恰柠檬吗</p>
+    </div>
+</body>
+</html>
+<!--
+    opactiy :不透明度 0为完全透明
+    animation-fill-mode ：属性规定动画在播放之前或之后，其动画效果是否可见
+                          forwards值：当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）
+-->

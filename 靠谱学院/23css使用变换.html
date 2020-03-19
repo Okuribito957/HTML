@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css使用变换</title>
+    <style type="text/css">
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+        }
+        .class1:hover{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 255);
+            transform:rotate(45deg) ;
+        }
+        .class2{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+        }
+        .class2:hover{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 255);
+            transform:scale(1.5) ;
+        }
+        .class3{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+        }
+        .class3:hover{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 255);
+            transform:rotate(45deg) ;
+            transform-origin: top right;
+        }
+    </style>
+</head>
+<body>
+    <p class="class1"></p><!--旋转-->
+    <p class="class2"></p><!--比例缩放-->
+    <p class="class3"></p><!--自定义变换原点-->
+</body>
+</html>
+<!--
+    class1：transform属性向元素应用2D或3D转换
+            rotate围绕变换原点旋转，可以用transform-origin属性设置自己自定义的变换原点
+            rotate默认为顺时针，逆时针时取负值
+    class2：值scale定义2D缩放转换，可用scalex、scaley设置X轴Y轴的值来定义缩放转换
+    class3：transform-origin: top right; top right可变为像素 Xpx Ypx 来具体控制变换原点
+-->

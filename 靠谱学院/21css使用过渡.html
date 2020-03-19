@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建文本过渡</title>
+    <style type="text/css">
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        p:hover{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transition-delay:500ms;
+        }
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .class1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transition-delay:500ms;
+            transition-duration: 500ms;
+        }
+        .class2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .class2:hover{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transition-delay:500ms;
+            transition-duration: 500ms;
+            transition-property:background-color;
+        }
+        .class3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .class3:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            transition-delay: 500ms;
+            transition-duration: 800ms;
+            transition-timing-function: ease-in;
+        }
+    </style>
+<body>
+    <p></p><!--直接过渡-->
+    <p class="class1"></p><!--延迟过渡-->
+    <p class="class2"></p><!--平滑过渡-->
+    <p class="class3"></p><!--transition-timing-function贝塞尔曲线-->
+</body>
+</html>
+<!--
+    transition属性控制过渡，transition-delay延迟过渡，transition-duration渐变平滑过渡
+    transition-property属性后加其他属性实现其他属性的平滑过渡
+-->

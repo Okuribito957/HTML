@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建动画</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+        }
+        p:hover{
+            animation-delay: 200ms;
+            animation-duration: 800ms;
+            animation-name: zjq;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+        }
+        @keyframes zjq{
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: crimson;
+            }
+        }
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+        }
+        .class1:hover{
+            animation-delay: 200ms;
+            animation-duration: 800ms;
+            animation-name: zjq;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+        }
+        @keyframes zjq{
+            from{
+                width: 150px;
+                height: 150px;
+                background-color: lightcoral;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: crimson;
+            }
+        }
+        .class2{
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+        }
+        .class2:hover{
+            animation-delay: 200ms;
+            animation-duration: 800ms;
+            animation-name: zjq2;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+        }
+        @keyframes zjq2{
+            from{
+                width: 100px;
+                height: 100px;
+                background-color: lightcoral;
+            }
+            50%{
+                width: 130px;
+                height: 130px;
+                background-color: blue;
+            }
+            75%{
+                width: 160px;
+                height: 160px;
+                background-color:yellow;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: crimson;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p class="class1"></p>
+    <p class="class2"></p>
+</body>
+</html>
+<!--
+    animation-iteration-count:+动画重复次数 值infinite无限循环
+    p:  @keyfarmes规则:创建动画
+    class1：了解from和to两个动作
+    class2：在from和to中有0%-100%个选择器供定义，以百分比来规定动画发生改变的时间
+-->
